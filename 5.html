@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="5.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="button-container">
+        <button id="prev"> <i class="fa-solid fa-backward"></i></button>
+        <button id="next"><i class="fa-solid fa-forward"></i></button>
+    </div>
+    <div class="scroll-container">
+   <section class="cute-design">
+    <!--page 1-->
+        <div id="front">
+           <h2 class="heading"> My To Do List</h2>
+           <p>Plan your day, achieve your goals, and make the most of your time!</p>
+           <img class="bird" src="./images-todo/bird1.png">
+        </div>
+    </section>
+    <!--page 2-->
+    <section class="page2">
+        <div>
+         <h2>Daily Planner</h2>
+        </div>
+        
+            <div class="box">
+                <div class="date-box">DATE</div>
+                <input type="date" id="date">
+            </div>
+            <div class="box2">
+             <div class="mood-box">MOOD</div>
+             <div class="mood-container">
+             <div class="mood-options">
+                <input type="radio" id="very-happy"name="mood"  value="😄">
+                <label for="very-happy">😄</label>
+
+                <input type="radio" id="happy" name="mood" value="😊">
+                <label for="happy">😊</label>
+
+                <input type="radio" id="neutral"name="mood"  value="😐">
+                <label for="neutral">😐</label>
+
+                <input type="radio" id="sad"name="mood"  value="😔">
+                <label for="sad">😔</label>
+
+                <input type="radio" id="teary" name="mood"  value="😢">
+                <label for="teary">😢</label>
+
+                <input type="radio" id="tired" name="mood" value="😫">
+                <label for="tired">😫</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="box3">
+        <div class="weather-box">WEATHER</div>
+        <div class="weather-container">
+        <div class="weather-options">
+           <input type="radio" id="sunny"name="weather"  value="☀">
+           <label for="sunny">☀</label>
+
+           <input type="radio" id="partly-sunny" name="weather" value="🌤">
+           <label for="partly-sunny">🌤</label>
+
+           <input type="radio" id="sunny-rain"name="weather"  value="☁">
+           <label for="sunny-rain">☁</label>
+
+           <input type="radio" id="heavy-rain"name="weather"  value="🌧">
+           <label for="heavy-rain">🌧</label>
+
+           <input type="radio" id="lightening" name="weather"  value="🌩">
+           <label for="lightening">🌩</label>
+
+           <input type="radio" id="snow" name="weather" value="⛇">
+           <label for="snow">⛇</label>
+       </div>
+   </div>
+</div>
+
+ <div class="days">
+    
+    <input type="radio"  id="monday" name="day">
+    <label for="monday" class="days-label">M</label>
+
+    <input type="radio" id="tuesday" name="day">
+    <label for="tuesday" class="days-label">T</label>
+    <input type="radio" id="wednesday"name="day">
+    <label for="wednesday" class="days-label">W</label>
+    <input type="radio" id="thursday" name="day">
+    <label for="thursday" class="days-label">T</label>
+    <input type="radio"id="friday" name="day">
+    <label for="friday" class="days-label">F</label>
+    <input type="radio" id="saturday" name="day">
+    <label for="saturday" class="days-label">S</label>
+    <input type="radio" id="sunday" name="day" >
+    <label for="sunday" class="days-label">S</label>
+   
+
+ </div>
+
+ <div class="box4">
+    <div class="water-box">WATER</div>
+    <div class="water-container">
+        <div class="water-options">
+    <input type="checkbox" id="glass1">
+    <label for="glass1" ><img src="./images-todo/glass.png " height="40px" width="40px"></label>
+    <input type="checkbox" id="glass2">
+    <label for="glass2" ><img src="./images-todo/glass.png " height="40px" width="40px"></label>
+    <input type="checkbox" id="glass3">
+    <label for="glass3" ><img src="./images-todo/glass.png " height="40px" width="40px"></label>
+    <input type="checkbox" id="glass4">
+    <label for="glass4" ><img src="./images-todo/glass.png " height="40px" width="40px"></label>
+    <input type="checkbox" id="glass5">
+    <label for="glass5" ><img src="./images-todo/glass.png " height="40px" width="40px"></label>
+    <input type="checkbox" id="glass6">
+    <label for="glass6" ><img src="./images-todo/glass.png " height="40px" width="40px"></label>
+    
+   </div>
+   <input type="text" placeholder="litres of water drank">
+
+ </div>
+</div>
+<div class="box5">
+    <div class="care-box">SKINCARE</div>
+    <div class="care-container">
+        <div class="text-area" contenteditable="true" ></div>
+        <img src="./images-todo/makeupnew3.png">
+   </div>
+</div>
+
+<div class="box6">
+    <div class="list-box">TO DO LIST</div>
+    <div class="list-container">
+        <div class="text-area" contenteditable="true" ></div>
+        <img src="./images-todo/nailpin4.png">
+    </div>
+</div>
+        
+  <div class="box7">
+    <div class="notes-box">Don't forget</div>
+     <div class="notes-container">
+        <div class="text-area" contenteditable="true" ></div>
+     </div>
+  </div>
+    </section>
+</div>
+    
+
+<script src="5.js"></script>
+</body>
+</html>
